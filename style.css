@@ -1,0 +1,1100 @@
+html.dark-mode {
+  background-color: #0a0e27;
+  color: #ffffff;
+}
+
+html.dark-mode body {
+  background-color: #0a0e27;
+  color: #ffffff;
+}
+
+html.dark-mode header {
+  background-color: rgba(10, 14, 39, 0.95);
+}
+
+html.dark-mode .experience-card,
+html.dark-mode .about-card,
+html.dark-mode .education-card,
+html.dark-mode .project-card {
+  background: #1a1f3a;
+  border-color: #2a3f5f;
+  color: #ffffff;
+}
+
+html.dark-mode .experience-card,
+html.dark-mode .about-card,
+html.dark-mode .education-card {
+  background-color: #1a1f3a;
+  color: #ffffff;
+}
+
+html.dark-mode .company,
+html.dark-mode .description,
+html.dark-mode .date-range,
+html.dark-mode .job-title {
+  color: #ffffff;
+}
+
+html.dark-mode .input input,
+html.dark-mode .form-group input,
+html.dark-mode .form-group textarea {
+  background-color: #1a1f3a;
+  border-color: #2a3f5f;
+  color: #ffffff;
+}
+
+html.dark-mode .input input::placeholder,
+html.dark-mode .form-group input::placeholder,
+html.dark-mode .form-group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+html.dark-mode .btn {
+  background-color: #1a1f3a;
+  border-color: #2a3f5f;
+  color: #ffffff;
+}
+
+html.dark-mode .btn:hover {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #0a0e27;
+}
+
+html.dark-mode ::-webkit-scrollbar-track {
+  background-color: #1a1f3a;
+}
+
+html.dark-mode .section-title {
+  color: #ffffff;
+  background: none;
+}
+html.dark-mode .about-title {
+  color: #ffffff;
+  background: none;
+}
+
+html.dark-mode .about-paragraph {
+  color: #ffffff;
+}
+
+html.dark-mode .location {
+  color: #ffffff;
+}
+
+html.dark-mode .input i {
+  color: #ffffff;
+}
+
+*{ margin: 0; 
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+   text-decoration: none;
+   scroll-behavior: smooth;
+ }
+
+*:not(ul.description, ul.description li, ul.skill-list, ul.skill-list li) {
+   list-style: none;
+}
+
+html {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+html.dark-mode {
+  background-color: #0a0e27;
+  color: #ffffff;
+}
+ header{
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 3rem;
+  z-index: 1000;
+}
+.logo{
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-wrap: nowrap;
+  transition: 0.3s ease-in-out;
+}
+.logo:hover{
+  transform: scale(1.1);
+}
+.nav-links{
+  display: flex;
+  gap: 2rem;
+}
+li a{
+  position: relative;
+  color: #fff;
+  font-weight: 300;
+}
+li a::before{
+  position: absolute;
+  content: '';
+  width: 0;
+  left: 0;
+  height: 5px;
+  top: 25px;
+  border-radius: 1rem;
+  transition: 0.3s ease-in-out;
+  background: linear-gradient(to right, rgba(0, 175, 255), rgb(255, 0, 255));
+}
+  
+li a:hover::before{
+  width: 100%;
+}
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+}
+
+.theme-toggle.active {
+  animation: glow 0.6s ease-in-out;
+}
+
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 0 0 5px rgba(0, 175, 255, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 15px rgba(0, 175, 255, 0.8), 0 0 20px rgba(255, 0, 255, 0.6);
+  }
+}
+.visit-btn{
+  padding: 0.8rem 1.5rem;
+  border-radius: 3rem;
+  border: none;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+  text-wrap: nowrap;
+  transition: 0.3s ease-in-out;
+  background: linear-gradient(to right, rgba(0, 175, 255), rgb(255, 0, 255));
+}
+.visit-btn:hover{
+  background: linear-gradient(to right, rgb(255, 0, 255), rgba(0, 175, 255));
+  transform: scale(1.03);
+}
+.btn-group{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+#menu-icon{
+  font-size: 2rem;
+  display: none;
+  
+}
+section{
+  min-height: 100vh;
+  padding: 8rem 12%;
+  width: 100%;
+  position: relative;
+}
+.hero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero .about-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+.hero img{
+  width: 30vw;
+  border-radius: 20%;
+  transition: transform 0.3s ease;
+}
+.hero img:hover{
+  transform: scale(1.05);
+}
+.info-box{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.info-box h3{
+  font-size: 1.8rem;
+  font-weight: 500;
+  opacity: 0.8;
+}
+.info-box h1{
+  font-size: 4rem;
+  font-weight: 600;
+}
+.info-box span{
+  background: linear-gradient(to right, rgba(0, 175, 255), rgb(255, 0, 255));
+  background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.info-box h4{
+  font-size: 1rem;
+  font-weight: 300;
+  opacity: 1;
+  margin-bottom: 2rem;
+}
+.btn-group{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.btn{
+  display: inline-block;
+  border-radius: 3rem;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid rgba(0, 0, 0);
+  cursor: pointer;
+  font-weight: 500;
+  text-wrap: nowrap;
+  transition: 0.2s ease-in-out;
+  color: #000;
+  text-decoration: none;
+}
+.btn:hover{
+  background-color: black;
+  color: #fff;
+}
+.socials{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.social-icon {
+  text-decoration: none;
+  color: inherit;
+}
+
+.socials i{
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.socials i:hover{
+  transform: scale(1.1);
+}
+.socials .fa-github:hover{
+  color: #333333;
+}
+.socials .fa-linkedin:hover{
+  color: #0A66C2;
+}
+.section-title{
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  text-align: center;
+  background:Black;
+  background-clip: text;
+  color: transparent;
+}
+.experience{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.experience-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.experience-card{
+  background: white;
+  border: 2px solid black;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.experience-card::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 175, 255, 0.1), transparent);
+  transition: left 0.5s ease-in-out;
+  z-index: 0;
+}
+.experience-card:hover::before{
+  left: 100%;
+}
+.experience-card:hover{
+  background-color: black;
+  color: #fff;
+  border-color: black;
+  transform: translateY(-5px);
+}
+.experience-card:hover .job-title{
+  background: linear-gradient(to right, rgba(0, 175, 255), rgb(255, 0, 255));
+  background-clip: text;
+  color: transparent;
+}
+.experience-card:hover .date-range{
+  color: rgba(255, 255, 255, 0.9);
+}
+.experience-card:hover .company{
+  color: #fff;
+}
+.experience-card:hover .description{
+  color: rgba(255, 255, 255, 0.9);
+}
+.experience-card:hover .btn{
+  border: 2px solid white;
+  color: white;
+}
+.experience-card:hover .btn:hover{
+  border: 2px solid white;
+  background-color: white;
+  color: black;
+}
+.card-content{
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+.company-logo{
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+}
+.card-info{
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  flex: 1;
+}
+.card-header{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+.job-title{
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: black;
+}
+.date-range{
+  font-size: 0.9rem;
+  color:black;
+  font-weight: 500;
+}
+.location{
+  font-size: 0.85rem;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 400;
+}
+.experience-card:hover .location{
+  color: rgba(255, 255, 255, 0.8);
+}
+.education-card:hover .location{
+  color: rgba(255, 255, 255, 0.8);
+}
+.company{
+  font-size: 1rem;
+  font-weight: 700;
+  color: black;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+.description{
+  font-size: 0.95rem;
+  color: black;
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+.about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-intro-container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.about-text{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.about-title{
+  font-size: 2.5rem;
+  font-weight: 600;
+  background: black;
+  background-clip: text;
+  color: transparent;
+}
+.about-card{
+  background: white;
+  border: 2px solid black;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.about-card::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 175, 255, 0.1), transparent);
+  transition: left 0.5s ease-in-out;
+  z-index: 0;
+}
+.about-card:hover::before{
+  left: 100%;
+}
+.about-card:hover{
+  background-color: black;
+  color: #fff;
+  border-color: black;
+  transform: translateY(-5px);
+}
+.about-card:hover .about-paragraph{
+  color: rgba(255, 255, 255, 0.9);
+}
+.about-paragraph{
+  font-size: 1rem;
+  color: black;
+  line-height: 1.8;
+  font-weight: 300;
+  position: relative;
+  z-index: 1;
+}
+.about-image{
+  width: 25vw;
+  min-width: 250px;
+  border-radius: 1.5rem;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.about-image:hover{
+  transform: scale(1.05);
+}
+.education{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.education-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.education-card{
+  background: white;
+  border: 2px solid black;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.education-card::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 175, 255, 0.1), transparent);
+  transition: left 0.5s ease-in-out;
+  z-index: 0;
+}
+.education-card:hover::before{
+  left: 100%;
+}
+.education-card:hover{
+  background-color: black;
+  color: #fff;
+  border-color: black;
+  transform: translateY(-5px);
+}
+.education-card:hover .job-title{
+  background: linear-gradient(to right, rgba(0, 175, 255), rgb(255, 0, 255));
+  background-clip: text;
+  color: transparent;
+}
+.education-card:hover .date-range{
+  color: rgba(255, 255, 255, 0.9);
+}
+.education-card:hover .company{
+  color: #fff;
+}
+.education-card:hover .description{
+  color: rgba(255, 255, 255, 0.9);
+}
+.education-card:hover .btn{
+  border: 2px solid white;
+  color: white;
+}
+.education-card:hover .btn:hover{
+  border: 2px solid white;
+  background-color: white;
+  color: black;
+}
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background-color : rgb(219, 219, 219);
+}
+::-webkit-scrollbar-thumb{
+  background:linear-gradient(to bottom, rgba(0, 175, 255), rgb(255, 0, 255));
+}
+.project-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.project-card{
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap : 1.5rem;
+  border: 2px solid black;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.project-card:hover{
+  background-color: black;
+  color: #fff;
+  transform: translateY(-10px)scale(1.02);
+}
+.project-card img{
+  width : 20vw;
+  border-radius: 1rem;
+  display: block;
+  margin: 0 auto;
+}
+.project-card:hover .btn{
+  border: 2px solid white;
+  color: white;
+}
+.project-card:hover .btn:hover{
+  border: 2px solid white;
+  background-color: white;
+  color: black;
+}
+.project-card h3{
+  font-size: 2rem;
+  font-weight: 500;
+}
+.project-card .btn-group{
+  gap: 0.5rem;
+}
+.input-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 5rem;
+}
+.input{
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+.input input{
+  width: 100%;
+  border-radius: 1rem;
+  border: 2px solid black;
+  padding: 1rem 1.5rem 1rem 3rem;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+  color: black;
+}
+.input input:focus{
+  outline: none;
+  border-color: #00AFFF;
+  box-shadow: 0 0 10px rgba(0, 175, 255, 0.3);
+}
+.input input::placeholder{
+  color: rgba(0, 0, 0, 0.5);
+}
+.input i{
+  position: absolute;
+  font-size: 1.2rem;
+  left: 1rem;
+  color: black;
+  pointer-events: none;
+  transition: color 0.3s ease-in-out;
+}
+.input input:focus ~ i{
+  color: #00AFFF;
+}
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+.contact-form .btn{
+  border: 2px solid black;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+  color: black;
+  font-weight: 500;
+}
+.contact-form .btn:hover{
+  background-color: black;
+  color: #fff;
+  transform: scale(1.05);
+}
+.contact-form .btn:active{
+  transform: scale(0.98);
+}
+.form-group{
+  width: 100%;
+  max-width: 600px;
+}
+.form-group input,
+.form-group textarea{
+  width: 100%;
+  border-radius: 1rem;
+  border: 2px solid black;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+  color: black;
+  resize: vertical;
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder{
+  color: rgba(0, 0, 0, 0.5);
+}
+.form-group input:focus,
+.form-group textarea:focus{
+  outline: none;
+  border-color: #00AFFF;
+  box-shadow: 0 0 10px rgba(0, 175, 255, 0.3);
+}
+ 
+footer{
+  bottom: 0;
+  left: 0;
+  height: 10rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.copyright{
+  font-size: 1rem;
+  margin-top:1rem;
+}
+
+/* Honors Section Styles */
+.honors{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.honors-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.honor-card{
+  background: white;
+  border: 2px solid black;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.honor-card::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 175, 255, 0.1), transparent);
+  transition: left 0.5s ease-in-out;
+  z-index: 0;
+}
+
+.honor-card:hover::before{
+  left: 100%;
+}
+
+.honor-card:hover{
+  background-color: black;
+  color: #fff;
+  border-color: black;
+  transform: translateY(-5px);
+}
+
+.honor-header{
+  display: none;
+}
+
+.honor-title-box{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+}
+
+.honor-title-box i{
+  font-size: 2rem;
+  background: linear-gradient(to right, rgba(0, 175, 255), rgb(255, 0, 255));
+  background-clip: text;
+  color: transparent;
+}
+
+.honor-card:hover .honor-title-box i{
+  color: #ffffff;
+  background: none;
+}
+
+.honor-title-box h3{
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: black;
+}
+
+.honor-card:hover .honor-title-box h3{
+  color: #ffffff;
+  background: none;
+}
+
+.honor-left{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.honor-content{
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.honor-description{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.honor-description p{
+  font-size: 0.95rem;
+  color: black;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.honor-card:hover .honor-description p{
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.honor-image{
+  width: 20vw;
+  border-radius: 20%;
+  transition: transform 0.3s ease;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 10px;
+  flex-shrink: 0;
+  background-color: rgba(0, 175, 255, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.honor-card:hover .honor-image{
+  border-color: rgba(255, 255, 255, 0.7);
+  transform: scale(1.05);
+}
+
+/* Skills Section Styles */
+.skills{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.skill-card{
+  background: white;
+  border: 2px solid black;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.skill-card::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 175, 255, 0.1), transparent);
+  transition: left 0.5s ease-in-out;
+  z-index: 0;
+}
+
+.skill-card:hover::before{
+  left: 100%;
+}
+
+.skill-card:hover{
+  background-color: black;
+  color: #fff;
+  border-color: black;
+  transform: translateY(-10px);
+}
+
+.skill-icon{
+  font-size: 3rem;
+  background: linear-gradient(to right, rgba(0, 175, 255), rgb(255, 0, 255));
+  background-clip: text;
+  color: transparent;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover .skill-icon{
+  color: #00AFFF;
+  background: none;
+  transform: scale(1.2);
+}
+
+.skill-card h3{
+  font-size: 1.3rem;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+  color: black;
+}
+
+.skill-card:hover h3{
+  color: #ffffff;
+  background: none;
+}
+
+.skill-card p{
+  font-size: 0.95rem;
+  color: black;
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+.skill-list{
+  font-size: 0.95rem;
+  color: black;
+  line-height: 1.8;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  list-style: disc;
+  padding-left: 1.5rem;
+  text-align: left;
+}
+
+.skill-list li{
+  margin-bottom: 0.5rem;
+}
+
+.skill-card:hover p{
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.skill-card:hover .skill-list{
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.skill-card .btn-group{
+  position: relative;
+  z-index: 1;
+}
+
+.skill-card .btn{
+  border: 2px solid rgba(0, 0, 0);
+  padding: 0.4rem 0.8rem;
+  border-radius: 1.5rem;
+  font-size: 0.85rem;
+}
+
+.skill-card:hover .btn{
+  border: 2px solid white;
+  color: white;
+}
+
+.skill-card:hover .btn:hover{
+  border: 2px solid white;
+  background-color: white;
+  color: black;
+}
+
+.experience-card .btn,
+.education-card .btn,
+.project-card .btn{
+  padding: 0.4rem 0.8rem;
+  border-radius: 1.5rem;
+  font-size: 0.85rem;
+}
+
+/* Dark Mode Styles for Honors and Skills */
+html.dark-mode .honor-card,
+html.dark-mode .skill-card{
+  background: #1a1f3a;
+  border-color: #2a3f5f;
+  color: #ffffff;
+}
+
+html.dark-mode .honor-description p,
+html.dark-mode .skill-card p,
+html.dark-mode .skill-list{
+  color: rgba(255, 255, 255, 0.8);
+}
+
+html.dark-mode .honor-card:hover,
+html.dark-mode .skill-card:hover{
+  background-color: #0a0e27;
+  border-color: #00AFFF;
+}
+
+html.dark-mode .honor-title-box i,
+html.dark-mode .skill-icon{
+  color: #00AFFF;
+  background: none;
+}
+
+html.dark-mode .honor-title-box h3,
+html.dark-mode .skill-card h3{
+  color: #00AFFF;
+  background: none;
+}
+
+html.dark-mode .honor-image{
+  border-color: #00AFFF;
+}
+
+html.dark-mode .skill-card .btn{
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.8);
+}

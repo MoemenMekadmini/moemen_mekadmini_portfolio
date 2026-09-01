@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css>
+</head>
+<body>
+    <header class = "header">
+        <a href="#" class="logo"> <span> Moemen Mekadmini</span></a>
+
+        <ul class = "nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#honors">Honors</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+        <i class="fa-solid fa-bars" id = "menu-icon"></i>
+        <a href="https://www.kaggle.com/moemenmekadmini" target="_blank" class="visit-btn">Kaggle</a>
+
+    </header>
+    <section id ="hero" class="hero">
+        <div class="about-container">
+            <img src="moe.jpeg" alt="">
+            <div class ="info-box">
+                <div class="text">
+                    <h3>Hi, I'm</h3>
+                    <h1>Moemen</h1>
+                    <span>Data Scientist</span>
+                    <h4>Tunis, Tunisia</h4>
+            </div>
+            <div class="btn-group">
+                <a href="cv.pdf" download class="btn">Download CV</a>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+            <div class="socials">
+                <a href="https://github.com/MoemenMekadmini" target="_blank" class="social-icon">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/moemenmeka/" target="_blank" class="social-icon">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="about-intro-container">
+            <div class="about-text">
+                <h2 class="about-title">About me</h2>
+                <div class="about-card">
+                    <p class="about-paragraph">I am a BSc. in Big Data and Data Analytics graduate and an aspiring entrepreneur who is passionate about technology, gaming, and art. I specialize in Machine Learning and Data Analysis by turning complex , high volume data into actionable security and business insights. I bring my enthusiasm, problem-solving skills and analytical thinking to make a positive impact on the world through technological innovations.</p>
+                </div>
+            </div>
+            <img src="moe.jpeg" alt="About" class="about-image">
+        </div>
+    </section>
+    <section id="experience" class="experience">
+        <h2 class ="section-title">Experience</h2>
+        <div class="experience-container">
+            <div class="experience-card">
+                <div class="card-content">
+                    <img src="getWireless.png" alt="GET WIRELESS" class="company-logo">
+                    <div class="card-info">
+                        <p class="company">GET WIRELESS</p>
+                        <h3 class="job-title">Data Science Intern (End-of-studies Project)</h3>
+                        <span class="date-range">Feb. 2026 - Jun. 2026</span>
+                        <span class="location">Tunis, Tunisia</span>
+                    </div>
+                </div>
+                <ul class="description">
+                    <li>Executed an end-to-end telecom fraud detection project targeting SIMBox and Subscription fraud to minimize financial losses, strictly adhering to the CRISP-DM methodology.</li>
+                    <li>Preprocessed and engineered features from large-scale historical Call Detail Records (CDRs) to optimize data quality for exploratory data analysis and modeling.</li>
+                    <li>Trained, tuned, and evaluated an XGBoost multi-classification model, achieving high predictive accuracy in identifying complex fraud patterns on unseen data.</li>
+                    <li>Developed an interactive web application using Streamlit, deploying the trained XGBoost model to enable real-time fraud type prediction.</li>
+                </ul>
+                <div class="btn-group">
+                        <span class="btn btn-tag">Python</span>
+                        <span class="btn btn-tag">CRISP-DM</span>
+                        <span class="btn btn-tag">XGBoost</span>
+                </div>
+            </div>
+            <div class="experience-card">
+                <div class="card-content">
+                    <img src="stb.png" alt="STB" class="company-logo">
+                    <div class="card-info">
+                        <p class="company"> STB </p>
+                        <h3 class="job-title">Data Science Intern</h3>
+                        <span class="date-range">Jul. 2025</span>
+                        <span class="location">Tunis, Tunisia</span>
+                    </div>
+                </div>
+                <ul class="description">
+                    <li>Developed a predictive credit default model using the CRISP-DM framework to analyze client data and assess potential financial risk.</li>
+                    <li>Cleaned, preprocessed and engineered features from large client datasets to enhance predictive accuracy and
+handle missing or imbalanced financial data.</li>
+                    <li>
+Trained and optimized Machine Learning algorithms to effectively classify potential credit defaulters.</li>
+
+                </ul>
+                <div class="btn-group">
+                        <span class="btn btn-tag">Python</span>
+                        <span class="btn btn-tag">CRISP-DM</span>
+                        <span class="btn btn-tag">Scikit-learn</span>
+                </div>
+         </div>
+    </section>
+    <section id="education" class="education">
+        <h2 class="section-title">Education</h2>
+        <div class="education-container">
+            <div class="education-card">
+                <div class="card-content">
+                    <img src="university.png" alt="University" class="company-logo">
+                    <div class="card-info">
+                        <p class="company">Université Centrale Tunisie</p>
+                        <h3 class="job-title">Bachelor's degree, Big Data and Data Analytics </h3>
+                        <span class="date-range">2023 - 2026</span>
+                        <span class="location">Tunis, Tunisia</span>
+                    </div>
+                </div>
+                <p class="description">Bachelor's Thesis: “ML-based telecom fraud detection”</p>
+                <div class="btn-group">
+                    <span class="btn btn-tag">Data mining</span>
+                    <span class="btn btn-tag">Probability</span>
+                    <span class="btn btn-tag">Statistics</span>
+                    <span class="btn btn-tag">Python</span>
+                </div>
+                
+        </div>
+    </section>
+    <section id ="projects" class="projects">
+        <h2 class="section-title"> Recent Projects</h2>
+        <div class="project-grid">
+            <div class ="project-card">
+                <img src="project1.png" alt="">
+                <h3> Telecom Fraud Detector</h3>
+                <p> An app designed to detect Telecom fraud using an XGBoost model trained on historical CDRs with a 0.81 f1-score.</p>
+                <div class="btn-group">
+                     <a href="https://github.com/MoemenMekadmini/Telecom_fraud_detector" target="_blank" class="btn">View Project</a>
+                </div>
+                <div class="btn-group">
+                    <span class="btn btn-tag">Python</span>
+                    <span class="btn btn-tag">CRISP-DM</span>
+                    <span class="btn btn-tag">ML</span>
+                </div>
+            </div>
+            <div class ="project-card">
+                <img src="project2.png" alt="">
+                <h3> MindScape</h3>
+                <p>  A generative AI mental health assistant designed to
+offer personalized mental health advice and help doctors monitor patient moods, powered by Hermes Mistral 7B.</p>
+                <div class="btn-group">
+                    <a href="https://github.com/MoemenMekadmini/MindScape_UC-_AI" target="_blank" class="btn">View Project</a>
+                </div>
+                <div class="btn-group">
+                    <span class="btn btn-tag">Python</span>
+                    <span class="btn btn-tag">Mistral 7B</span>
+                    <span class="btn btn-tag">Gradio</span>
+                </div>
+            </div>
+            <div class ="project-card">
+                <img src="project3.png" alt="">
+                <h3>Credit default risk modeling </h3>
+                <p> A logistic regression model trained on historical financial data from American Express Bank to predict credit default risks with a 0.98 f1-score.
+            </p>
+                <div class="btn-group">
+                    <a href="https://github.com/MoemenMekadmini/Credit_risk_default" target="_blank" class="btn">View Project</a>
+                </div>
+                <div class="btn-group">
+                    <span class="btn btn-tag">Python</span>
+                    <span class="btn btn-tag">CRISP-DM</span>
+                    <span class="btn btn-tag">ML</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="honors" class="honors">
+        <h2 class="section-title">Honors & Awards</h2>
+        <div class="honors-container">
+            <div class="honor-card">
+                <div class="honor-content">
+                    <div class="honor-left">
+                        <div class="honor-title-box">
+                            <i class="fa-solid fa-trophy"></i>
+                            <h3>UC: Coding with Generative AI 2nd place</h3>
+                        </div>
+                        <div class="honor-description">
+                            <p>In just 48 intense hours, we built MindScape, a generative AI mental health assistant designed to:</p>
+                            <p>💬 Offer empathetic, personalized mental health advice – Powered by Hermes Mistral 7B, fine-tuned for safe, supportive conversations.</p>
+                            <p>📊 Help doctors monitor patient moods – Using sentiment analysis to generate actionable mood scores from patient interactions.</p>
+                            <p>🖥️ Seamless UI with Gradio – Fast, intuitive frontend to demo our AI’s capabilities in real-time.</p>
+                        </div>
+                    </div>
+                    <img src="honors.jpg" alt="Honor" class="honor-image">
+                    <img src="honors2.jpg" alt="Honor 2" class="honor-image">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <h3>Programming Languages</h3>
+                <ul class="skill-list">
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>JavaScript</li>
+                    <li>HTML & CSS</li>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Java</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+                <h3>Machine Learning & Data Science</h3>
+                <ul class="skill-list">
+                    <li>XGBoost</li>
+                    <li>Scikit-learn</li>
+                    <li>Pandas</li>
+                    <li>NumPy</li>
+                    <li>Matplotlib</li>
+                    <li>Seaborn</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fa-solid fa-toolbox"></i>
+                </div>
+                <h3>Tools & Technologies</h3>
+                <ul class="skill-list">
+                    <li>VSCode</li>
+                    <li>Google Colab</li>
+                    <li>Git & GitHub</li>
+                    <li>Jupyter Notebook</li>
+                    <li>Matlab</li>
+                    <li>Excel</li>
+                    <li>Weka</li>
+                    <li>Hadoop</li>
+                    <li>Spark</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fa-solid fa-people-group"></i>
+                </div>
+                <h3>Soft Skills</h3>
+                <ul class="skill-list">
+                    <li>Problem Solving</li>
+                    <li>Analytical Thinking</li>
+                    <li>Communication</li>
+                    <li>Collaboration</li>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <h3>Languages</h3>
+                <ul class="skill-list">
+                    <li>Arabic</li>
+                    <li>French</li>
+                    <li>English</li>
+                    <li>German</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact" >
+      <div class="input-box">
+        <h2 class="section-title">Contact Me</h2>
+        <form class="contact-form" action="https://formspree.io/f/mnpqjnnp" method="POST">
+          <div class="form-group">
+              <input type="text" name="name" placeholder="Your Name" required>
+          </div>
+          <div class ="input">
+              <input type="email" name="email" placeholder="Your Email" required>
+              <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="form-group">
+              <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+        <p class="copyright">
+         &copy; <span id="year"></span> Moemen Mekadmini. All rights reserved.
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
