@@ -60,6 +60,30 @@ prefersDark.addEventListener('change', (e) => {
   }
 });
 
+// ===== MOBILE MENU FUNCTIONALITY =====
+const menuIcon = document.getElementById('menu-icon');
+const navLinks = document.querySelector('.nav-links');
+
+// Toggle mobile menu
+menuIcon.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+
+// Close menu when a link is clicked
+const links = navLinks.querySelectorAll('a');
+links.forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+  });
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', (event) => {
+  if (!event.target.closest('header')) {
+    navLinks.classList.remove('active');
+  }
+});
+
 // Initialize theme on page load
 document.addEventListener('DOMContentLoaded', initTheme);
 initTheme(); // Also call immediately in case DOM is already loaded
